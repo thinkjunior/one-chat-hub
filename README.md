@@ -27,12 +27,14 @@
 
 ```
 one-chat-hub-site/
-├─ index.html              单页正文（SEO 头部、全部文案与锚点）
+├─ index.html              单页正文（SEO 头部、全部文案与锚点，中英共用一份 DOM）
+├─ 检查双语文案.mjs         中英文案一致性自检（node 检查双语文案.mjs）
 ├─ .nojekyll               GitHub Pages 原样发布，不走 Jekyll
 ├─ .gitattributes          统一 LF
 ├─ assets/
 │  ├─ style.css            浅色新未来主义样式（仪器面板质感）
-│  ├─ site.js              截图 tab 切换 / 入场淡入 / 导航高亮
+│  ├─ i18n.js              中英词典（唯一文案真相源，键值成对）
+│  ├─ site.js              语言切换 / 截图 tab 切换 / 入场淡入 / 导航高亮
 │  ├─ logo.png favicon.png                 取自本项目 public/img/
 │  └─ screenshot-zh.png screenshot-en.png  取自本项目 public/screenshots/
 └─ 发布到GitHub Pages.py    一键发布脚本
@@ -78,11 +80,32 @@ git push -u origin main
 > 不要改成 `/assets/...` 开头，否则整站 404。
 > 换仓库名后记得跑一次 `--fix-canonical`，canonical 与实际地址不一致会让搜索引擎收录 404 页。
 
+## 中英双语
+
+站点是**一份 DOM + 一份词典**：页面文案通过 `data-i18n`（innerHTML）、`data-i18n-content` /
+`data-i18n-alt` / `data-i18n-aria`（属性）挂键，`window.OCH_I18N` 提供 zh / en 两套文案。
+从结构上保证中英版永远同构，不会出现两个 HTML 各自漂移。
+
+- 语言优先级：URL `?lang=en` → `localStorage['och-site-lang']` → 默认中文；切换后 URL 同步。
+- 英文模式下 Hero 大图与界面预览 tab 自动切到 `screenshot-en.png`，og:image / twitter:image 同步。
+- `index.html` 内联的中文只是**默认中文文案**（无 JS 时的兜底），改文案必须同时改 `assets/i18n.js` 的 zh 与 en。
+
+**每次改文案后跑自检：**
+
+```powershell
+node 检查双语文案.mjs
+```
+
+脚本会校验：HTML 引用的每个键在 zh / en 都存在且非空、两个语言键集完全一致、英文值不含中文字符，
+并列出页面里未挂 `data-i18n` 的中文（英文模式下会残留的部分）。有问题退出码非 0。
+
 ## 页面区块
+
+以下区块均为中英双语，通过右上角「中 / EN」切换：
 
 | 区块 | 内容 |
 |---|---|
-| Hero | 标语、机制说明、双 CTA、三条信任点、本品截图 |
+| Hero | 标语、机制说明、双 CTA、三条信任点、本品截图（随语言切换 zh/en 版） |
 | 规格带 | v1.0.0 / 22 平台 / 12 语言 / MV3 / chrome.storage / 免费 |
 | 功能详解 | 8 张卡，全部对应源码实现 |
 | 支持平台 | 国际 10 + 中国 12 完整清单 |
@@ -92,7 +115,8 @@ git push -u origin main
 
 ## 修改要点
 
-- 改文案：编辑 `index.html`
+- 改文案：编辑 `assets/i18n.js`（zh 与 en **必须成对**），HTML 内联文本同步改中文兜底，然后跑 `node 检查双语文案.mjs`
+- 新增文案：HTML 加 `data-i18n="xxx"` 并同时在词典补 zh / en 两条，否则自检报错
 - 换截图：替换 `assets/screenshot-zh.png` / `screenshot-en.png`（均为 1280×800，取自扩展项目构建产物）
 - 改配色：`assets/style.css` 顶部 `:root` 变量
 - 改版本号：`index.html` 头部 `brand-tag`、规格带与页脚的 `1.0.0`

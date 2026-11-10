@@ -97,6 +97,19 @@ a:hover { text-decoration: underline; }
 .nav { display: flex; gap: 26px; margin-left: auto; }
 .nav a { color: var(--ink-2); font-size: 14.5px; font-weight: 500; }
 .nav a:hover { color: var(--brand); text-decoration: none; }
+.lang-switch {
+  display: inline-flex; align-items: center; gap: 2px;
+  padding: 3px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface);
+}
+.lang-btn {
+  border: 0; background: transparent; cursor: pointer; font: inherit;
+  font-family: var(--font-mono); font-size: 12px; font-weight: 600; line-height: 1;
+  color: var(--ink-3); padding: 5px 9px; border-radius: 999px;
+  transition: color .15s ease, background .15s ease;
+}
+.lang-btn:hover { color: var(--ink); }
+.lang-btn.is-active { background: var(--brand); color: #fff; }
+.lang-btn.is-active:hover { color: #fff; }
 
 /* ---------- 通用区块 ---------- */
 .section { padding: 92px 0; }
@@ -453,6 +466,7 @@ code {
 }
 @media (max-width: 860px) {
   .nav { display: none; }
+  .lang-switch { margin-left: auto; }
   .section-head.split { grid-template-columns: 1fr; gap: 16px; }
   .feature-grid { grid-template-columns: 1fr; }
   .hero { padding-top: 56px; }
