@@ -3,9 +3,9 @@
    改完运行 python 检查双语文案.py 自检，确保没有漏译。 */
 window.OCH_I18N = {
   zh: {
-    "meta.title": "One Chat Hub — 一次提问，AI 并排作答",
+    "meta.title": "One Chat Hub — 多模型分屏对话与共识提取",
     "meta.desc": "One Chat Hub 是一款浏览器扩展：把一个问题同时提交给内置的 22 个 AI 平台，在同一个页面里并排看答案。使用你自己的网页账号，无需 API Key，数据只存在本机，完全免费。",
-    "meta.ogTitle": "One Chat Hub — 一次提问，AI 并排作答",
+    "meta.ogTitle": "One Chat Hub — 多模型分屏对话与共识提取",
     "meta.ogDesc": "一个问题同时提交给 22 个 AI 平台，同页并排比较。自己的账号，不用 API Key，数据不出本机。",
     "meta.imgAlt": "One Chat Hub 工作区：多个 AI 平台并排显示同一个问题的回答",
 
@@ -19,8 +19,8 @@ window.OCH_I18N = {
     "lang.aria": "语言 / Language",
 
     "hero.eyebrow": "<span class=\"pulse-dot\"></span>完全免费 · 无需 API Key · 内置 22 个主流 AI 平台",
-    "hero.title": "一次提问，<span class=\"grad\">AI 并排作答</span>",
-    "hero.sub": "Ask once. AI answers, side by side.",
+    "hero.title": "多模型分屏对话与<span class=\"grad\">共识提取</span>",
+    "hero.sub": "Many models, side by side — extract the consensus.",
     "hero.desc": "One Chat Hub 把多个 AI 网页装进同一个标签页：你在底部输入一次问题，扩展把内容自动填进各个平台的输入框并触发提交，然后把它们的回答并排放在一起比较。用的是你自己已登录的网页账号，不需要 API Key，也不需要把内容交给任何第三方服务器。",
     "hero.ctaChrome": "Chrome 应用商店",
     "hero.ctaEdge": "Edge 加载项",
@@ -112,16 +112,16 @@ window.OCH_I18N = {
     "faq.q7": "以后会有什么功能？",
     "faq.a7": "规划中的方向是会话管理与结果导出。尚未实现的功能不会写进上面的功能列表。",
 
-    "footer.tagline": "Ask once. AI answers, side by side.",
+    "footer.tagline": "Many models, side by side — extract the consensus.",
     "footer.navAria": "页脚导航",
     "footer.chrome": "Chrome 商店",
     "footer.edge": "Edge 加载项"
   },
 
   en: {
-    "meta.title": "One Chat Hub — Ask once, AI answers side by side",
+    "meta.title": "One Chat Hub — Multi-model split-screen chat with consensus extraction",
     "meta.desc": "One Chat Hub is a browser extension that sends one question to 22 built-in AI platforms and shows their answers side by side on a single page. It runs on your own signed-in web accounts — no API key, no servers, completely free.",
-    "meta.ogTitle": "One Chat Hub — Ask once, AI answers side by side",
+    "meta.ogTitle": "One Chat Hub — Multi-model split-screen chat with consensus extraction",
     "meta.ogDesc": "One question, 22 AI platforms, answers compared side by side. Your own accounts, no API key, and data never leaves your machine.",
     "meta.imgAlt": "One Chat Hub workspace: several AI platforms showing answers to the same question side by side",
 
@@ -135,8 +135,8 @@ window.OCH_I18N = {
     "lang.aria": "Language",
 
     "hero.eyebrow": "<span class=\"pulse-dot\"></span>Completely free · No API key · 22 major AI platforms built in",
-    "hero.title": "Ask once, <span class=\"grad\">AI answers side by side</span>",
-    "hero.sub": "One question in. Every model answers.",
+    "hero.title": "Multi-model split-screen chat with <span class=\"grad\">consensus extraction</span>",
+    "hero.sub": "Many models, side by side — extract the consensus.",
     "hero.desc": "One Chat Hub puts several AI websites in a single tab: type your question once at the bottom, and the extension fills it into each platform's input box and submits it, then lays the answers out side by side. It runs on the accounts you are already signed in to — no API key, and nothing sent to any third-party server.",
     "hero.ctaChrome": "Chrome Web Store",
     "hero.ctaEdge": "Edge Add-ons",
@@ -228,7 +228,7 @@ window.OCH_I18N = {
     "faq.q7": "What is coming next?",
     "faq.a7": "The planned directions are session management and result export. Unfinished features never go into the list above.",
 
-    "footer.tagline": "Ask once. AI answers, side by side.",
+    "footer.tagline": "Many models, side by side — extract the consensus.",
     "footer.navAria": "Footer navigation",
     "footer.chrome": "Chrome store",
     "footer.edge": "Edge Add-ons"

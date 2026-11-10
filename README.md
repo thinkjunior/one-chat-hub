@@ -1,6 +1,6 @@
 # One Chat Hub · 单页官网
 
-一次提问，AI 并排作答 —— One Chat Hub 的单页介绍站。纯静态、零构建，直接发布到 GitHub Pages。
+多模型分屏对话与共识提取 —— One Chat Hub 的单页介绍站。纯静态、零构建，直接发布到 GitHub Pages。
 
 线上地址：**<https://thinkjunior.github.io/one-chat-hub/>**
 

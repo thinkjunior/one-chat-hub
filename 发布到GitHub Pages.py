@@ -152,7 +152,7 @@ def main():
         print(f"创建仓库 {args.owner}/{args.repo} …")
         r = s.post(f"{API}/user/repos", json={
             "name": args.repo, "private": False, "auto_init": False,
-            "description": "One Chat Hub 单页官网 · 一次提问，AI并排作答",
+            "description": "One Chat Hub 单页官网 · 多模型分屏对话与共识提取",
         }, timeout=40)
         if r.status_code not in (200, 201):
             print(f"创建仓库返回 {r.status_code}: {r.text[:300]}")
