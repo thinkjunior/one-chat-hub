@@ -12,6 +12,7 @@
 |---|---|
 | 内置 22 个平台（国际 10 + 中国 12） | `src/config/platforms.ts` 的 `PLATFORM_CONFIGS` |
 | 一次输入多平台自动提交、无按钮平台回退回车 | `src/content-scripts/auto-fill.ts`、`src/background/index.ts` |
+| 共识提取（输入框旁「提取共识」按钮） | 扩展商店描述「高效共识提取」；`public/screenshots/` 截图中输入框右侧按钮 |
 | 多布局、列数切换 | `src/components/layout/ChatContent.tsx` |
 | 提示词词条库 | `src/components/settings/PromptLibrary.tsx` |
 | 平台地址可自定义 | `src/components/settings/PlatformUrlConfig.tsx` |
@@ -107,7 +108,7 @@ node 检查双语文案.mjs
 |---|---|
 | Hero | 标语、机制说明、双 CTA、三条信任点、本品截图（随语言切换 zh/en 版） |
 | 规格带 | v1.0.0 / 22 平台 / 12 语言 / MV3 / chrome.storage / 免费 |
-| 功能详解 | 8 张卡，全部对应源码实现 |
+| 功能详解 | 9 张卡，全部对应源码实现 |
 | 支持平台 | 国际 10 + 中国 12 完整清单 |
 | 界面预览 | 中英两张真实运行截图 tab 切换 |
 | 获取与安装 | Chrome 应用商店 / Edge 加载项入口，完整包 / 中英包，附商店安装与开发者模式加载步骤 |
