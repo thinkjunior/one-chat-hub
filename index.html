@@ -75,7 +75,7 @@
     <div class="spec-grid">
       <div class="spec"><span class="spec-k" data-i18n="spec.version.k">当前版本</span><span class="spec-v mono">1.0.0</span><span class="spec-d" data-i18n="spec.version.d">manifest 版本号</span></div>
       <div class="spec"><span class="spec-k" data-i18n="spec.platforms.k">内置平台</span><span class="spec-v mono">22</span><span class="spec-d" data-i18n="spec.platforms.d">国际 10 + 中国 12</span></div>
-      <div class="spec"><span class="spec-k" data-i18n="spec.langs.k">界面语言</span><span class="spec-v mono">12</span><span class="spec-d" data-i18n="spec.langs.d">完整包，中英包为 2</span></div>
+      <div class="spec"><span class="spec-k" data-i18n="spec.langs.k">界面语言</span><span class="spec-v mono">12</span><span class="spec-d" data-i18n="spec.langs.d">12 种全部内置</span></div>
       <div class="spec"><span class="spec-k" data-i18n="spec.spec.k">扩展规范</span><span class="spec-v mono">MV3</span><span class="spec-d" data-i18n="spec.spec.d">Chrome / Edge</span></div>
       <div class="spec"><span class="spec-k" data-i18n="spec.storage.k">数据存储</span><span class="spec-v mono">chrome.storage</span><span class="spec-d" data-i18n="spec.storage.d">仅本机</span></div>
       <div class="spec"><span class="spec-k" data-i18n="spec.price.k">价格</span><span class="spec-v mono" data-i18n="spec.price.v">免费</span><span class="spec-d" data-i18n="spec.price.d">无内置付费</span></div>
@@ -154,8 +154,7 @@
         <span class="feature-no mono">08</span>
         <div class="feature-body">
           <h3 data-i18n="f7.h">12 种界面语言</h3>
-          <p data-i18n="f7.p">基于 i18next，构建产物内含 12 个语言目录（简中、繁中、英、日、韩、俄、德、法、西、阿、葡×2）。
-             另有只保留中英双语的精简包。</p>
+          <p data-i18n="f7.p">基于 i18next，构建产物内含 12 个语言目录（简中、繁中、英、日、韩、俄、德、法、西、阿、葡×2）。</p>
         </div>
       </article>
       <article class="feature">
@@ -217,7 +216,7 @@
   <div class="container">
     <div class="section-head">
       <h2 data-i18n="install.title">获取与安装</h2>
-      <p class="section-lead" data-i18n="install.lead">已上架 <b>Chrome 应用商店</b>与 <b>Edge 加载项</b>，点下面的卡片直接安装，更新由浏览器自动完成；无法访问商店时，也可以下载压缩包离线安装。</p>
+      <p class="section-lead" data-i18n="install.lead">已上架 <b>Chrome 应用商店</b>与 <b>Edge 加载项</b>，点下面的卡片直接安装，更新由浏览器自动完成。</p>
     </div>
 
     <div class="store-grid">
@@ -237,38 +236,13 @@
       </a>
     </div>
 
-    <div class="download-grid">
-      <article class="dl-card">
-        <p class="dl-os mono">full</p>
-        <h3 class="dl-head" data-i18n="dl.fullHead">完整包 · 12 语言</h3>
-        <p class="dl-desc" data-i18n="dl.fullDesc">包含全部 12 个界面语言目录，约 1.1 MB。</p>
-        <span class="dl-tag mono">one-chat-hub-v1.0.0-full.zip</span>
-      </article>
-      <article class="dl-card">
-        <p class="dl-os mono">zh-en</p>
-        <h3 class="dl-head" data-i18n="dl.zhEnHead">中英精简包</h3>
-        <p class="dl-desc" data-i18n="dl.zhEnDesc">构建后裁掉多余语言目录，只保留简体中文与英文。</p>
-        <span class="dl-tag mono">one-chat-hub-v1.0.0-zh-en.zip</span>
-      </article>
-    </div>
-
     <div class="container-narrow">
-      <h3 data-i18n="install.storeH">从商店安装（推荐）</h3>
+      <h3 data-i18n="install.storeH">从商店安装</h3>
       <ol class="faq">
         <li data-i18n="install.s1">点上面的 <b>Chrome 应用商店</b>或 <b>Edge 加载项</b>卡片，进入扩展详情页。</li>
         <li data-i18n="install.s2">点「添加至 Chrome」或「获取」，确认权限后浏览器自动完成安装。</li>
         <li data-i18n="install.s3">先在各平台网页完成登录，再打开 One Chat Hub 发起提问。</li>
       </ol>
-
-      <h3 data-i18n="install.devH">离线安装（开发者模式）</h3>
-      <ol class="faq">
-        <li data-i18n="install.d1"><b>解压</b>下载得到的 zip（或本地 <span class="mono">npm run build</span> 生成 <span class="mono">dist/</span>）。</li>
-        <li data-i18n="install.d2">地址栏打开 <span class="mono code-line">chrome://extensions/</span>（Edge 用 <span class="mono">edge://extensions/</span>）。</li>
-        <li data-i18n="install.d3">打开右上角的<b>开发者模式</b>。</li>
-        <li data-i18n="install.d4">点击<b>加载已解压的扩展程序</b>，选择解压出来的 <span class="mono">dist/</span> 目录。</li>
-        <li data-i18n="install.d5">同样先登录各平台，再打开 One Chat Hub。</li>
-      </ol>
-      <p class="notice" data-i18n="install.notice">提示：商店版本的更新由浏览器自动完成；以「开发者模式加载」安装的扩展不会自动更新，升级时需要替换目录并点击扩展卡片上的「重新加载」。</p>
     </div>
   </div>
 </section>
@@ -287,9 +261,6 @@
 
       <dt data-i18n="faq.q3">支持哪些浏览器？</dt>
       <dd data-i18n="faq.a3">Manifest V3，已在 Chrome 与 Edge 上使用。Firefox 需要自行调整权限声明后再加载。</dd>
-
-      <dt data-i18n="faq.q4">从商店装还是离线装？</dt>
-      <dd data-i18n="faq.a4">推荐 <b>Chrome 应用商店</b>与 <b>Edge 加载项</b>，安装一次后由浏览器自动更新。离线包适合无法访问商店、或需要固定版本的场景，但升级时要手动替换目录。</dd>
 
       <dt data-i18n="faq.q5">某个平台改版了、打不开怎么办？</dt>
       <dd data-i18n="faq.a5">先在设置里改这个平台的 URL；若是输入框选择器变化，需要等扩展更新适配。</dd>

@@ -358,27 +358,9 @@ a:hover { text-decoration: underline; }
 }
 .shot-panel figcaption { margin-top: 14px; font-size: 13px; color: var(--ink-3); text-align: center; }
 
-/* ---------- 下载 ---------- */
-.download-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
-.dl-card { padding: 26px; display: flex; flex-direction: column; gap: 14px; }
-.dl-head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
-.dl-os { font-size: 20px; font-weight: 700; }
-.dl-tag { font-size: 11.5px; color: var(--ink-3); }
-.dl-desc { color: var(--ink-2); font-size: 14px; flex: 1; }
-
-.notice {
-  margin-top: 26px; background: var(--surface); border: 1px solid var(--line);
-  border-left: 3px solid var(--brand); border-radius: var(--radius); padding: 22px 24px;
-  box-shadow: var(--shadow-sm);
-}
-.notice h4 { font-size: 15.5px; margin-bottom: 8px; }
-.notice p { color: var(--ink-2); font-size: 14px; }
-.notice b { color: var(--ink); }
+/* ---------- 安装步骤 ---------- */
 .container-narrow h3 { font-size: 19.5px; font-weight: 700; margin: 34px 0 14px; }
 .container-narrow h3:first-child { margin-top: 0; }
-.notice details { margin-top: 14px; border-top: 1px dashed var(--line); padding-top: 12px; }
-.notice summary { cursor: pointer; font-weight: 600; font-size: 14.5px; color: var(--ink); }
-.notice details p { margin-top: 8px; }
 .code-line {
   font-size: 13px; background: var(--bg-alt); border: 1px solid var(--line);
   border-radius: 8px; padding: 9px 12px; margin-top: 8px; color: var(--ink);
@@ -462,7 +444,7 @@ code {
   .spec-grid { grid-template-columns: repeat(3, 1fr); }
   .spec:nth-child(4) { border-left: 0; }
   .spec:nth-child(n+4) { border-top: 1px solid var(--line-soft); }
-  .download-grid, .store-grid, .review-grid { grid-template-columns: repeat(2, 1fr); }
+  .store-grid, .review-grid { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 860px) {
   .nav { display: none; }
@@ -477,7 +459,7 @@ code {
   .spec-grid { grid-template-columns: repeat(2, 1fr); }
   .spec:nth-child(odd) { border-left: 0; }
   .spec:nth-child(n+3) { border-top: 1px solid var(--line-soft); }
-  .download-grid, .store-grid, .review-grid { grid-template-columns: 1fr; }
+  .store-grid, .review-grid { grid-template-columns: 1fr; }
   .hero-cta .btn { width: 100%; }
   .trust-row { gap: 14px; font-size: 13px; }
 }

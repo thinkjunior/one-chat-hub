@@ -17,7 +17,7 @@
 | 提示词词条库 | `src/components/settings/PromptLibrary.tsx` |
 | 平台地址可自定义 | `src/components/settings/PlatformUrlConfig.tsx` |
 | 快捷键设置 | `src/components/settings/ShortcutSettings.tsx` |
-| 12 种界面语言（中英包 2 种） | `dist/_locales/*`、`scripts/trim-locales.cjs` 的 `KEEP=["en","zh_CN"]` |
+| 12 种界面语言 | `dist/_locales/*` |
 | 配置仅存本机 | `src/store/chatStore.ts` 的 `persistInstances` / `persistPlatformUrls` |
 | 商店条目 | Chrome Web Store `mahknfabcidcbbpbjnbjoanhopbfbphn`、Edge Add-ons `hfdlhmcpmkejpbaflbnbbpcgnjfoheom`，版本均为 1.0.0 |
 
@@ -111,8 +111,8 @@ node 检查双语文案.mjs
 | 功能详解 | 9 张卡，全部对应源码实现 |
 | 支持平台 | 国际 10 + 中国 12 完整清单 |
 | 界面预览 | 中英两张真实运行截图 tab 切换 |
-| 获取与安装 | Chrome 应用商店 / Edge 加载项入口，完整包 / 中英包，附商店安装与开发者模式加载步骤 |
-| FAQ | 7 条：API Key、数据流向、浏览器支持、商店与离线安装、平台改版、同页嵌入限制、后续方向 |
+| 获取与安装 | Chrome 应用商店 / Edge 加载项入口，附商店安装步骤 |
+| FAQ | 6 条：API Key、数据流向、浏览器支持、平台改版、同页嵌入限制、后续方向 |
 
 ## 修改要点
 
