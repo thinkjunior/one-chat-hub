@@ -52,7 +52,7 @@
     <h1 data-i18n="hero.title">多模型分屏对话与<span class="grad">共识提取</span></h1>
     <p class="hero-sub" data-i18n="hero.sub">Many models, side by side — extract the consensus.</p>
     <p class="hero-desc" data-i18n="hero.desc">
-      One Chat Hub 把多个 AI 网页装进同一个标签页：你在底部输入一次问题，扩展把内容自动填进各个平台的输入框并触发提交，
+      One Chat Hub 把多个 AI 网页装进同一个标签页：你在顶部输入一次问题，扩展把内容自动填进各个平台的输入框并触发提交，
       然后把它们的回答并排放在一起比较。用的是你自己已登录的网页账号，不需要 API Key，也不需要把内容交给任何第三方服务器。
     </p>
     <div class="hero-cta">
@@ -65,7 +65,7 @@
     </div>
     <div class="hero-shot">
       <img id="hero-shot" src="assets/screenshot-zh.png" width="1280" height="800" loading="eager"
-           alt="One Chat Hub 工作区：多个 AI 平台并排显示同一个问题的回答，底部是共享输入框" data-i18n-alt="hero.shotAlt">
+           alt="One Chat Hub 工作区：多个 AI 平台并排显示同一个问题的回答，顶部是共享输入框" data-i18n-alt="hero.shotAlt">
     </div>
   </div>
 </section>
@@ -75,7 +75,7 @@
     <div class="spec-grid">
       <div class="spec"><span class="spec-k" data-i18n="spec.version.k">当前版本</span><span class="spec-v mono">1.0.0</span><span class="spec-d" data-i18n="spec.version.d">manifest 版本号</span></div>
       <div class="spec"><span class="spec-k" data-i18n="spec.platforms.k">内置平台</span><span class="spec-v mono">22</span><span class="spec-d" data-i18n="spec.platforms.d">国际 10 + 中国 12</span></div>
-      <div class="spec"><span class="spec-k" data-i18n="spec.langs.k">界面语言</span><span class="spec-v mono">12</span><span class="spec-d" data-i18n="spec.langs.d">12 种全部内置</span></div>
+      <div class="spec"><span class="spec-k" data-i18n="spec.langs.k">界面语言</span><span class="spec-v mono">2</span><span class="spec-d" data-i18n="spec.langs.d">中文 / English</span></div>
       <div class="spec"><span class="spec-k" data-i18n="spec.spec.k">扩展规范</span><span class="spec-v mono">MV3</span><span class="spec-d" data-i18n="spec.spec.d">Chrome / Edge</span></div>
       <div class="spec"><span class="spec-k" data-i18n="spec.storage.k">数据存储</span><span class="spec-v mono">chrome.storage</span><span class="spec-d" data-i18n="spec.storage.d">仅本机</span></div>
       <div class="spec"><span class="spec-k" data-i18n="spec.price.k">价格</span><span class="spec-v mono" data-i18n="spec.price.v">免费</span><span class="spec-d" data-i18n="spec.price.d">无内置付费</span></div>
@@ -115,21 +115,21 @@
         <span class="feature-no mono">03</span>
         <div class="feature-body">
           <h3 data-i18n="f.consensus.h">共识提取</h3>
-          <p data-i18n="f.consensus.p">多个平台给出回答后，点输入框旁的「提取共识」按钮，把各列回答汇总起来提炼共同结论，用多模型交叉验证代替逐列人工比对。</p>
+          <p data-i18n="f.consensus.p">多个平台给出回答后，点输入框旁的「提取共识」按钮，把各列回答汇总起来提炼共同结论；首次使用需先在设置里指定用于汇总的共识对话。用多模型交叉验证代替逐列人工比对。</p>
         </div>
       </article>
       <article class="feature">
         <span class="feature-no mono">04</span>
         <div class="feature-body">
-          <h3 data-i18n="f3.h">多布局切换</h3>
-          <p data-i18n="f3.p">布局组件支持切换列数与排列方式，你按平台数量和自己屏幕宽度选择怎么排。</p>
+          <h3 data-i18n="f3.h">最大列数可调</h3>
+          <p data-i18n="f3.p">设置里可把最大列数设为自动或固定值，超出列数的平台实例不同屏显示，按平台数量和屏幕宽度控制排布。</p>
         </div>
       </article>
       <article class="feature">
         <span class="feature-no mono">05</span>
         <div class="feature-body">
-          <h3 data-i18n="f4.h">提示词词条库</h3>
-          <p data-i18n="f4.p">设置里有独立的词条库页面，可维护常用提示词，在输入时复用，避免每次重打长提示。</p>
+          <h3 data-i18n="f4.h">提示词库</h3>
+          <p data-i18n="f4.p">设置里有提示词库管理面板，可维护常用提示词；输入时从输入框的魔法棒下拉直接插入，避免每次重打长提示。</p>
         </div>
         <div class="feature-visual v-prompts" aria-hidden="true">
           <div class="prompt-list"><span></span><span></span><span></span></div>
@@ -146,15 +146,15 @@
       <article class="feature">
         <span class="feature-no mono">07</span>
         <div class="feature-body">
-          <h3 data-i18n="f6.h">快捷键设置</h3>
-          <p data-i18n="f6.p">设置里可配置快捷键，用来完成提交、切换等常用动作，减少来回点鼠标。</p>
+          <h3 data-i18n="f6.h">对话组</h3>
+          <p data-i18n="f6.p">把常用平台组合保存成对话组，顶部一键切换整组平台；新建、重命名、删除都在同一个下拉里完成。</p>
         </div>
       </article>
       <article class="feature">
         <span class="feature-no mono">08</span>
         <div class="feature-body">
-          <h3 data-i18n="f7.h">12 种界面语言</h3>
-          <p data-i18n="f7.p">基于 i18next，构建产物内含 12 个语言目录（简中、繁中、英、日、韩、俄、德、法、西、阿、葡×2）。</p>
+          <h3 data-i18n="f7.h">中英双语界面</h3>
+          <p data-i18n="f7.p">界面基于 i18next 提供中文与 English 两种语言，在设置里切换后立即生效。</p>
         </div>
       </article>
       <article class="feature">
@@ -203,7 +203,7 @@
     </div>
     <div class="shot-panel is-active" id="shot-zh" role="tabpanel">
       <img src="assets/screenshot-zh.png" width="1280" height="800" loading="lazy"
-           alt="One Chat Hub 中文界面：多个平台并排回答同一问题，底部为共享输入框" data-i18n-alt="interface.altZh">
+           alt="One Chat Hub 中文界面：多个平台并排回答同一问题，顶部为共享输入框" data-i18n-alt="interface.altZh">
     </div>
     <div class="shot-panel" id="shot-en" role="tabpanel" hidden>
       <img src="assets/screenshot-en.png" width="1280" height="800" loading="lazy"

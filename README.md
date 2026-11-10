@@ -12,12 +12,12 @@
 |---|---|
 | 内置 22 个平台（国际 10 + 中国 12） | `src/config/platforms.ts` 的 `PLATFORM_CONFIGS` |
 | 一次输入多平台自动提交、无按钮平台回退回车 | `src/content-scripts/auto-fill.ts`、`src/background/index.ts` |
-| 共识提取（输入框旁「提取共识」按钮） | 扩展商店描述「高效共识提取」；`public/screenshots/` 截图中输入框右侧按钮 |
-| 多布局、列数切换 | `src/components/layout/ChatContent.tsx` |
-| 提示词词条库 | `src/components/settings/PromptLibrary.tsx` |
+| 共识提取（输入框旁「提取共识」按钮，首次需指定共识对话） | `src/components/layout/ChatHeader.tsx` 的 `doConsensus`；扩展商店描述「高效共识提取」；截图输入框右侧按钮 |
+| 最大列数可调 | `src/components/layout/ChatContent.tsx`（`maxColumns`）、`src/store/chatStore.ts` |
+| 提示词库（设置内管理面板） | `src/components/settings/PromptLibrary.tsx` |
 | 平台地址可自定义 | `src/components/settings/PlatformUrlConfig.tsx` |
-| 快捷键设置 | `src/components/settings/ShortcutSettings.tsx` |
-| 12 种界面语言 | `dist/_locales/*` |
+| 对话组管理 | `src/components/layout/ChatHeader.tsx`、`src/store/chatStore.ts` 的 `setActiveGroup` / `addDialogGroup` |
+| 中英双语界面 | `src/i18n/index.ts`（仅 zh / en 两套）；`dist/_locales` 仅扩展名称与描述本地化 |
 | 配置仅存本机 | `src/store/chatStore.ts` 的 `persistInstances` / `persistPlatformUrls` |
 | 商店条目 | Chrome Web Store `mahknfabcidcbbpbjnbjoanhopbfbphn`、Edge Add-ons `hfdlhmcpmkejpbaflbnbbpcgnjfoheom`，版本均为 1.0.0 |
 
