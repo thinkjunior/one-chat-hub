@@ -4,7 +4,7 @@
 window.OCH_I18N = {
   zh: {
     "meta.title": "One Chat Hub — 一次提问，AI 并排作答",
-    "meta.desc": "One Chat Hub 是一款开源的浏览器扩展：把一个问题同时提交给内置的 22 个 AI 平台，在同一个页面里并排看答案。使用你自己的网页账号，无需 API Key，数据只存在本机，完全免费。",
+    "meta.desc": "One Chat Hub 是一款浏览器扩展：把一个问题同时提交给内置的 22 个 AI 平台，在同一个页面里并排看答案。使用你自己的网页账号，无需 API Key，数据只存在本机，完全免费。",
     "meta.ogTitle": "One Chat Hub — 一次提问，AI 并排作答",
     "meta.ogDesc": "一个问题同时提交给 22 个 AI 平台，同页并排比较。自己的账号，不用 API Key，数据不出本机。",
     "meta.imgAlt": "One Chat Hub 工作区：多个 AI 平台并排显示同一个问题的回答",
@@ -44,7 +44,7 @@ window.OCH_I18N = {
     "spec.price.d": "无内置付费",
 
     "features.title": "功能详解",
-    "features.lead": "下面每一项都对应源码里真实存在的实现，未实现的设想不写在这里。",
+    "features.lead": "下面每一项都是已实现的功能，未实现的设想不写在这里。",
     "f1.h": "一次输入，多平台自动提交",
     "f1.p": "内容脚本按每个平台配置的选择器找到输入框（<span class=\"mono\">inputButtonSelector</span> 等），填入问题并触发提交；对没有稳定发送按钮的平台，回退为回车提交。",
     "f2.h": "并排比较答案",
@@ -117,7 +117,7 @@ window.OCH_I18N = {
     "faq.q4": "从商店装还是离线装？",
     "faq.a4": "推荐 <b>Chrome 应用商店</b>与 <b>Edge 加载项</b>，安装一次后由浏览器自动更新。离线包适合无法访问商店、或需要固定版本的场景，但升级时要手动替换目录。",
     "faq.q5": "某个平台改版了、打不开怎么办？",
-    "faq.a5": "先在设置里改这个平台的 URL；若是输入框选择器变化，可在 <span class=\"mono\">src/config/platforms.ts</span> 调整后重新构建。",
+    "faq.a5": "先在设置里改这个平台的 URL；若是输入框选择器变化，需要等扩展更新适配。",
     "faq.q6": "同一平台开多列会互相影响吗？",
     "faq.a6": "扩展通过 <span class=\"mono\">declarativeNetRequest</span> 调整部分请求头，使各平台页面能在同页嵌入正常工作。个别站点仍可能拒绝嵌入，这类平台请单独开标签页使用。",
     "faq.q7": "以后会有什么功能？",
@@ -131,7 +131,7 @@ window.OCH_I18N = {
 
   en: {
     "meta.title": "One Chat Hub — Ask once, AI answers side by side",
-    "meta.desc": "One Chat Hub is an open-source browser extension that sends one question to 22 built-in AI platforms and shows their answers side by side on a single page. It runs on your own signed-in web accounts — no API key, no servers, completely free.",
+    "meta.desc": "One Chat Hub is a browser extension that sends one question to 22 built-in AI platforms and shows their answers side by side on a single page. It runs on your own signed-in web accounts — no API key, no servers, completely free.",
     "meta.ogTitle": "One Chat Hub — Ask once, AI answers side by side",
     "meta.ogDesc": "One question, 22 AI platforms, answers compared side by side. Your own accounts, no API key, and data never leaves your machine.",
     "meta.imgAlt": "One Chat Hub workspace: several AI platforms showing answers to the same question side by side",
@@ -171,7 +171,7 @@ window.OCH_I18N = {
     "spec.price.d": "No paid tiers",
 
     "features.title": "What it does",
-    "features.lead": "Every item below maps to an implementation that actually exists in the source. Unfinished ideas are not listed here.",
+    "features.lead": "Every item below is a feature that actually exists. Unfinished ideas are not listed here.",
     "f1.h": "Type once, submit everywhere",
     "f1.p": "Content scripts use each platform's configured selectors (<span class=\"mono\">inputButtonSelector</span> and friends) to find the input box, fill in the question and trigger submit. Where there is no stable send button, it falls back to pressing Enter.",
     "f2.h": "Compare answers side by side",
@@ -244,7 +244,7 @@ window.OCH_I18N = {
     "faq.q4": "Store install or offline install?",
     "faq.a4": "The <b>Chrome Web Store</b> and <b>Edge Add-ons</b> are recommended — install once and the browser keeps it updated. Offline builds suit cases where a store is unreachable or you need a pinned version, but upgrading means replacing the folder manually.",
     "faq.q5": "A platform redesigned and will not open. What now?",
-    "faq.a5": "First change that platform's URL in settings. If its input selector changed, adjust <span class=\"mono\">src/config/platforms.ts</span> and rebuild.",
+    "faq.a5": "First change that platform's URL in settings. If the input selector itself changed, wait for an extension update.",
     "faq.q6": "Do two columns of the same platform interfere?",
     "faq.a6": "The extension uses <span class=\"mono\">declarativeNetRequest</span> to adjust some request headers so platform pages can be embedded on one page. A few sites may still refuse embedding; open those in their own tabs.",
     "faq.q7": "What is coming next?",

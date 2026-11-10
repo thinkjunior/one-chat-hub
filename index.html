@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title data-i18n="meta.title">One Chat Hub — 一次提问，AI 并排作答</title>
-<meta name="description" data-i18n-content="meta.desc" content="One Chat Hub 是一款开源的浏览器扩展：把一个问题同时提交给内置的 22 个 AI 平台，在同一个页面里并排看答案。使用你自己的网页账号，无需 API Key，数据只存在本机，完全免费。">
+<meta name="description" data-i18n-content="meta.desc" content="One Chat Hub 是一款浏览器扩展：把一个问题同时提交给内置的 22 个 AI 平台，在同一个页面里并排看答案。使用你自己的网页账号，无需 API Key，数据只存在本机，完全免费。">
 <meta name="keywords" content="One Chat Hub, OCH, AI对比, 多平台AI, ChatGPT, Gemini, DeepSeek, 豆包, Kimi, 浏览器扩展, Chrome扩展">
 <meta name="author" content="junior">
 <link rel="canonical" href="https://thinkjunior.github.io/one-chat-hub/">
@@ -87,7 +87,7 @@
   <div class="container">
     <div class="section-head">
       <h2 data-i18n="features.title">功能详解</h2>
-      <p class="section-lead" data-i18n="features.lead">下面每一项都对应源码里真实存在的实现，未实现的设想不写在这里。</p>
+      <p class="section-lead" data-i18n="features.lead">下面每一项都是已实现的功能，未实现的设想不写在这里。</p>
     </div>
     <div class="feature-grid">
       <article class="feature">
@@ -285,7 +285,7 @@
       <dd data-i18n="faq.a4">推荐 <b>Chrome 应用商店</b>与 <b>Edge 加载项</b>，安装一次后由浏览器自动更新。离线包适合无法访问商店、或需要固定版本的场景，但升级时要手动替换目录。</dd>
 
       <dt data-i18n="faq.q5">某个平台改版了、打不开怎么办？</dt>
-      <dd data-i18n="faq.a5">先在设置里改这个平台的 URL；若是输入框选择器变化，可在 <span class="mono">src/config/platforms.ts</span> 调整后重新构建。</dd>
+      <dd data-i18n="faq.a5">先在设置里改这个平台的 URL；若是输入框选择器变化，需要等扩展更新适配。</dd>
 
       <dt data-i18n="faq.q6">同一平台开多列会互相影响吗？</dt>
       <dd data-i18n="faq.a6">扩展通过 <span class="mono">declarativeNetRequest</span> 调整部分请求头，使各平台页面能在同页嵌入正常工作。个别站点仍可能拒绝嵌入，这类平台请单独开标签页使用。</dd>
