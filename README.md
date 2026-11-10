@@ -18,10 +18,10 @@
 | 快捷键设置 | `src/components/settings/ShortcutSettings.tsx` |
 | 12 种界面语言（中英包 2 种） | `dist/_locales/*`、`scripts/trim-locales.cjs` 的 `KEEP=["en","zh_CN"]` |
 | 配置仅存本机 | `src/store/chatStore.ts` 的 `persistInstances` / `persistPlatformUrls` |
-| 未上架任何商店 | 无商店条目，安装走"加载已解压的扩展程序" |
+| 商店条目 | Chrome Web Store `mahknfabcidcbbpbjnbjoanhopbfbphn`、Edge Add-ons `hfdlhmcpmkejpbaflbnbbpcgnjfoheom`，版本均为 1.0.0 |
 
 **新增功能前必须先确认代码里有实现**；未实现的设想只能写进"以后会有什么"，不能出现在功能列表。
-同理，不要引用其他产品的商店链接、版本号、安装包或用户评价。
+商店链接只允许使用下表本品自己的条目，不要引用其他产品的商店链接、版本号、安装包或用户评价。
 
 ## 目录结构
 
@@ -87,8 +87,8 @@ git push -u origin main
 | 功能详解 | 8 张卡，全部对应源码实现 |
 | 支持平台 | 国际 10 + 中国 12 完整清单 |
 | 界面预览 | 中英两张真实运行截图 tab 切换 |
-| 获取与安装 | 完整包 / 中英包 / 源码构建，附开发者模式加载步骤 |
-| FAQ | 7 条：API Key、数据流向、浏览器支持、为何无商店、平台改版、同页嵌入限制、后续方向 |
+| 获取与安装 | Chrome 应用商店 / Edge 加载项入口，完整包 / 中英包 / 源码构建，附商店安装与开发者模式加载步骤 |
+| FAQ | 7 条：API Key、数据流向、浏览器支持、商店与离线安装、平台改版、同页嵌入限制、后续方向 |
 
 ## 修改要点
 

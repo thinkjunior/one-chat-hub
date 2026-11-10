@@ -362,6 +362,8 @@ a:hover { text-decoration: underline; }
 .notice h4 { font-size: 15.5px; margin-bottom: 8px; }
 .notice p { color: var(--ink-2); font-size: 14px; }
 .notice b { color: var(--ink); }
+.container-narrow h3 { font-size: 19.5px; font-weight: 700; margin: 34px 0 14px; }
+.container-narrow h3:first-child { margin-top: 0; }
 .notice details { margin-top: 14px; border-top: 1px dashed var(--line); padding-top: 12px; }
 .notice summary { cursor: pointer; font-weight: 600; font-size: 14.5px; color: var(--ink); }
 .notice details p { margin-top: 8px; }
@@ -375,11 +377,13 @@ code {
 }
 
 /* ---------- 商店卡 ---------- */
-.store-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.store-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-bottom: 34px; }
 .store-card {
   display: flex; align-items: center; gap: 15px; padding: 22px 24px;
   color: var(--ink); transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
 }
+.store-brand { display: flex; flex-direction: column; gap: 4px; }
+.store-meta { font-size: 12.5px; color: var(--ink-3); }
 .store-card:hover {
   text-decoration: none; transform: translateY(-3px); border-color: rgba(47, 92, 255, .4);
   box-shadow: var(--shadow-md);
