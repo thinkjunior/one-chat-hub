@@ -27,7 +27,6 @@ window.OCH_I18N = {
     "hero.ctaMore": "看它怎么做到的",
     "hero.trust1": "数据只存本机",
     "hero.trust2": "不上传对话内容",
-    "hero.trust3": "源码开放",
     "hero.shotAlt": "One Chat Hub 工作区：多个 AI 平台并排显示同一个问题的回答，底部是共享输入框",
 
     "spec.version.k": "当前版本",
@@ -118,11 +117,11 @@ window.OCH_I18N = {
     "faq.q4": "从商店装还是离线装？",
     "faq.a4": "推荐 <b>Chrome 应用商店</b>与 <b>Edge 加载项</b>，安装一次后由浏览器自动更新。离线包适合无法访问商店、或需要固定版本的场景，但升级时要手动替换目录。",
     "faq.q5": "某个平台改版了、打不开怎么办？",
-    "faq.a5": "先在设置里改这个平台的 URL；若是输入框选择器变化，可在 <span class=\"mono\">src/config/platforms.ts</span> 调整后重新构建，也欢迎提 issue。",
+    "faq.a5": "先在设置里改这个平台的 URL；若是输入框选择器变化，可在 <span class=\"mono\">src/config/platforms.ts</span> 调整后重新构建。",
     "faq.q6": "同一平台开多列会互相影响吗？",
     "faq.a6": "扩展通过 <span class=\"mono\">declarativeNetRequest</span> 调整部分请求头，使各平台页面能在同页嵌入正常工作。个别站点仍可能拒绝嵌入，这类平台请单独开标签页使用。",
     "faq.q7": "以后会有什么功能？",
-    "faq.a7": "规划中的方向是会话管理与结果导出。尚未实现的功能不会写进上面的功能列表，进度以仓库 issue 为准。",
+    "faq.a7": "规划中的方向是会话管理与结果导出。尚未实现的功能不会写进上面的功能列表。",
 
     "footer.tagline": "Ask once. AI answers, side by side.",
     "footer.navAria": "页脚导航",
@@ -155,7 +154,6 @@ window.OCH_I18N = {
     "hero.ctaMore": "See how it works",
     "hero.trust1": "Data stays on your machine",
     "hero.trust2": "No conversation uploads",
-    "hero.trust3": "Open source",
     "hero.shotAlt": "One Chat Hub workspace: several AI platforms answering the same question side by side, with a shared input box at the bottom",
 
     "spec.version.k": "Version",
@@ -246,11 +244,11 @@ window.OCH_I18N = {
     "faq.q4": "Store install or offline install?",
     "faq.a4": "The <b>Chrome Web Store</b> and <b>Edge Add-ons</b> are recommended — install once and the browser keeps it updated. Offline builds suit cases where a store is unreachable or you need a pinned version, but upgrading means replacing the folder manually.",
     "faq.q5": "A platform redesigned and will not open. What now?",
-    "faq.a5": "First change that platform's URL in settings. If its input selector changed, adjust <span class=\"mono\">src/config/platforms.ts</span> and rebuild — and feel free to file an issue.",
+    "faq.a5": "First change that platform's URL in settings. If its input selector changed, adjust <span class=\"mono\">src/config/platforms.ts</span> and rebuild.",
     "faq.q6": "Do two columns of the same platform interfere?",
     "faq.a6": "The extension uses <span class=\"mono\">declarativeNetRequest</span> to adjust some request headers so platform pages can be embedded on one page. A few sites may still refuse embedding; open those in their own tabs.",
     "faq.q7": "What is coming next?",
-    "faq.a7": "The planned directions are session management and result export. Unfinished features never go into the list above; progress follows the repository issues.",
+    "faq.a7": "The planned directions are session management and result export. Unfinished features never go into the list above.",
 
     "footer.tagline": "Ask once. AI answers, side by side.",
     "footer.navAria": "Footer navigation",
